@@ -1,8 +1,78 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(30, 30, 30);
-    color: white;
     font-family: 'Courier New', monospace;    
     text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.header {
+    display: grid;
+    justify-items: center;
+    margin: 20px;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.7rem;
+}
+
+.header > span {
+    color: #44403c;
+}
+
+.icons i {
+    font-size: 2rem;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.photo {
+    position: relative;    
+    background-image: url('./assets/worker.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 500px;
+}
+
+.photo span {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    font-size: 3.3rem;
+    line-height: 1;
+}
+
+.header .icons {
+    margin-top: 10px;
+}
+
+.work, .contact {
+    margin-top: 60px;
+}
+
+.work h1 {
+    margin: 0;
+}
+
+.card {
+    box-shadow: 5px 5px 15px;
+    margin-bottom: 60px;
+}
+
+.card > img {
+    width: 280px;
+    height: 250px;
+}
+
+.card > div {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.card span {
+    font-size: 1.3rem;
 }

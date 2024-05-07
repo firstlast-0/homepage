@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    
+    <div class="header">
+        <div class="photo">
+            <span>Ashley Williams</span>            
+        </div><br>
+        <h1>About me</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id elementum eros. Suspendisse sed risus nisi. Nam magna mauris, commodo non ligula eget, ornare placerat massa. Aenean sed velit in massa porta tincidunt ut at ipsum. Aliquam accumsan mauris magna, sed placerat magna pretium vel. Fusce vel dolor elementum, iaculis arcu eget, ornare justo.</span>
+        <div class="icons">
+            <i class="devicon-github-original colored"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+            <i class="devicon-twitter-original colored"></i>
+        </div>
+    </div>
+
+    <div class="work">
+        <h1>My Work</h1>
+        <div class="card">
+            <img src="<%= require('./assets/project.jpg') %>" alt="proj">
+            <div>
+                <span>Project Name</span>
+                <div class="icons">
+                    <i class="devicon-github-original colored"></i>
+                    <img src="<%= require('./assets/open-in-new.svg') %>" alt="proj">
+                </div>
+            </div>
+            description
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h2>Project Name</h2>
+            description
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h2>Project Name</h2>
+            description
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h2>Project Name</h2>
+            description
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h2>Project Name</h2>
+            description
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h2>Project Name</h2>
+            description
+        </div>
+    </div>
+
+    <div class="contact">
+        <h1>Contact me</h1>
+        Please get in touch if you think our work could be mutually beneficial!
+        <br><br>
+        1234 Random Road<br>
+        Random Town, California 12345
+        <br><br>
+        555-555-555<br>
+        ashwil@gmail.com
+    </div>
 </body>
 </html>
