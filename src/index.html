@@ -8,11 +8,14 @@
 </head>
 <body>
     <div class="header">
+        <span class="name">Ashley Williams</span>
         <div class="photo">
-            <span>Ashley Williams</span>            
-        </div><br>
-        <h1>About me</h1>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id elementum eros. Suspendisse sed risus nisi. Nam magna mauris, commodo non ligula eget, ornare placerat massa. Aenean sed velit in massa porta tincidunt ut at ipsum. Aliquam accumsan mauris magna, sed placerat magna pretium vel. Fusce vel dolor elementum, iaculis arcu eget, ornare justo.</span>
+            <span>Ashley Williams</span>
+        </div>
+        <span class="text">
+            <span>About me</span><br>            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id elementum eros. Suspendisse sed risus nisi. Nam magna mauris, commodo non ligula eget, ornare placerat massa. Aenean sed velit in massa porta tincidunt ut at ipsum. Aliquam accumsan mauris magna, sed placerat magna pretium vel. Fusce vel dolor elementum, iaculis arcu eget, ornare justo.
+        </span>
         <div class="icons">
             <i class="devicon-github-original colored"></i>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
@@ -20,8 +23,9 @@
         </div>
     </div>
 
+    <h1>My Work</h1>
     <div class="work">
-        <h1>My Work</h1>
+        
         <div class="card">
             <img src="<%= require('./assets/project.jpg') %>" alt="proj">
             <div>
@@ -94,11 +98,13 @@
         <div>
             <h1>Contact me</h1>
             <span>Please get in touch if you think our work could be mutually beneficial!</span>
-            <br><br>
+            <br><br><br>
             1234 Random Road<br>
             Random Town, California 12345
-            <br><br>
-            555-555-555<br>
+            <br><br><br>
+            <img src="<%= require('./assets/phone.svg') %>" alt="phone">
+            555-555-5555<br>
+            <img src="<%= require('./assets/email.svg') %>" alt="phone">
             ashwil@gmail.com<br>
             <div>
                 <div class="icons">
