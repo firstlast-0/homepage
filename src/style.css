@@ -34,11 +34,6 @@ body {
     margin-top: 30px;
 }
 
-.header + h1 {
-    position: relative;
-    top: 75px;
-}
-
 .icons i {
     font-size: 2rem;
 }
@@ -79,7 +74,7 @@ body {
 }
 
 .work, .contact {
-    margin-top: 60px;
+    margin-top: 150px;
 }
 
 .work h1 {
@@ -91,6 +86,13 @@ body {
     margin-bottom: 60px;
     width: 280px;
     padding-bottom: 80px;
+    position: relative;
+}
+
+.card > h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
 }
 
 .card > img {
@@ -203,13 +205,7 @@ body {
         display: block;
     }
 
-    .header + h1 {
-        top: 75px;
-        right: 225px;
-    }
-
-    .contact {
-        
+    .contact {        
         padding: 40px 40px 50px 30px;
         grid-template-columns: 2fr 1fr;
     }
@@ -250,10 +246,43 @@ body {
 @media (min-width: 1024px) {
     .header {
         max-width: 800px;
-        padding: 20px 0 10px 0;
+        padding: 0 30px 0 0;
+    }
+
+    .header .name {
+        display: none;
+    }
+
+    .header .text span {
+        text-align: left;
+    }
+
+    .header .icons {
+        display: block;
+        text-align: right;
+        margin-top: 45px;
     }
 
     .photo {
-        transform: scale(1);
+        transform: scale(1.15) translateX(-40px);
     } 
+
+    .photo span {
+        display: inline;
+        font-size: 2.4rem;
+        white-space: nowrap;
+        color: black;
+    } 
+
+    .work {
+        width: 100vw;
+    }
+
+    .contact > div {
+        margin-top: 0;
+    }
+
+    .contact > img {
+        width: 500px;
+    }
 }
